@@ -381,37 +381,37 @@ public:
 
     // Show a friendly guide, like a tour guide for our app
     void displayHelp() {
-    cout << "\n=== Welcome to the Rwanda Road Network Manager! ===\n";
-    cout << "This app helps you keep track of Rwanda’s awesome cities and the roads connecting them, like a super cool map for planning!\n";
-    cout << "\nWhat Can You Do?\n";
-    cout << "- Add Cities: Pop new cities onto the map, like adding a new favorite spot.\n";
-    cout << "- Connect Cities: Build roads between cities, like linking Kigali to Huye.\n";
-    cout << "- Set Budgets: Plan how much cash (in billions of RWF) to spend on roads.\n";
-    cout << "- Save Everything: Your work is saved to files so you can pick up later.\n";
-    cout << "- Auto IDs: Cities get numbered automatically (1, 2, 3...), no stress!\n";
+        cout << "\n=== Welcome to the Rwanda Road Network Manager! ===\n";
+        cout << "This app helps you keep track of Rwanda’s awesome cities and the roads connecting them, like a super cool map for planning!\n";
+        cout << "\nWhat Can You Do?\n";
+        cout << "- Add Cities: Pop new cities onto the map, like adding a new favorite spot.\n";
+        cout << "- Connect Cities: Build roads between cities, like linking Kigali to Huye.\n";
+        cout << "- Set Budgets: Plan how much cash (in billions of RWF) to spend on roads.\n";
+        cout << "- Save Everything: Your work is saved to files so you can pick up later.\n";
+        cout << "- Auto IDs: Cities get numbered automatically (1, 2, 3...), no stress!\n";
 
-    cout << "\nMenu Options (Pick a Number!):\n";
-    cout << "1. Add new city(ies): Add one or more new cities to the map.\n";
-    cout << "2. Add roads between cities: Connect two cities with a road.\n";
-    cout << "3. Add the budget for roads: Set money for a road, like 28.6 billion RWF.\n";
-    cout << "4. Edit city: Change a city’s name, like renaming Huye to something else.\n";
-    cout << "5. Search for a city using its index: Look up a city by its ID number.\n";
-    cout << "6. Display cities: See all cities and their IDs in reverse order (newest first).\n";
-    cout << "7. Display cities: See all cities and their IDs in reverse order, like a quick tour guide list.\n";
-    cout << "8. Display recorded data: See everything—cities, roads, and budgets.\n";
-    cout << "9. Help: Show this friendly guide.\n";
-    cout << "10. Exit: Save your work and head out.\n";
+        cout << "\nMenu Options (Pick a Number!):\n";
+        cout << "1. Add new city(ies): Add one or more new cities to the map.\n";
+        cout << "2. Add roads between cities: Connect two cities with a road.\n";
+        cout << "3. Add the budget for roads: Set money for a road, like 28.6 billion RWF.\n";
+        cout << "4. Edit city: Change a city’s name, like renaming Huye to something else.\n";
+        cout << "5. Search for a city using its index: Look up a city by its ID number.\n";
+        cout << "6. Display cities: See all cities and their IDs in reverse order (newest first).\n";
+        cout << "7. Display cities: See all cities and their IDs in reverse order, like a quick tour guide list.\n";
+        cout << "8. Display recorded data: See everything—cities, roads, and budgets.\n";
+        cout << "9. Help: Show this friendly guide.\n";
+        cout << "10. Exit: Save your work and head out.\n";
 
-    cout << "\nTips to Rock This App:\n";
-    cout << "- City IDs are given automatically (1 for Kigali, 2 for Huye, etc.).\n";
-    cout << "- Budgets are in billions of RWF, so type a number like 28 for 28 billion.\n";
-    cout << "- Don’t use commas in city names—they mess with our files!\n";
-    cout << "- Everything saves automatically to files, so no worries about losing work.\n";
+        cout << "\nTips to Rock This App:\n";
+        cout << "- City IDs are given automatically (1 for Kigali, 2 for Huye, etc.).\n";
+        cout << "- Budgets are in billions of RWF, so type a number like 28 for 28 billion.\n";
+        cout << "- Don’t use commas in city names—they mess with our files!\n";
+        cout << "- Everything saves automatically to files, so no worries about losing work.\n";
 
-    cout << "\nWhere’s the Data Kept?\n";
-    cout << "- cities.txt: Lists all cities with their IDs.\n";
-    cout << "- roads.txt: Shows which cities are connected and their budgets.\n";
-
+        cout << "\nWhere’s the Data Kept?\n";
+        cout << "- cities.txt: Lists all cities with their IDs.\n";
+        cout << "- roads.txt: Shows which cities are connected and their budgets.\n";
+    }
 };
 
 // The main stage where the app runs, like the control center in Kigali
