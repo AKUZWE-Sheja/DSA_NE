@@ -1,0 +1,73 @@
+graph TD
+    A[Start Program] --> B[Initialize Data Structures<br>(Load cities.txt, roads.txt)]
+    B --> C[Display Menu]
+    C --> D[Get User Input]
+    D -->|Valid Input| E{Menu Choice}
+    D -->|Invalid Input| F[Display Error<br>Invalid Option]
+    F --> C
+
+    E -->|1| G[Add New City]
+    G --> H[Auto-generate City Index]
+    H --> I[Input City Name]
+    I --> J[Add to City List]
+    J --> K[Save to cities.txt]
+    K --> C
+
+    E -->|2| L[Add Roads Between Cities]
+    L --> M[Input Two City Names]
+    M --> N[Validate Cities Exist]
+    N -->|Valid| O[Add Road to Adjacency Matrix]
+    N -->|Invalid| P[Display Error<br>Invalid City Name]
+    O --> Q[Save to roads.txt]
+    Q --> C
+    P --> C
+
+    E -->|3| R[Add Budget for Road]
+    R --> S[Input Two City Indices]
+    S --> T[Validate Road Exists]
+    T -->|Valid| U[Input Budget]
+    U --> V[Update Budget in Matrix]
+    V --> W[Save to roads.txt]
+    W --> C
+    T -->|Invalid| X[Display Error<br>No Road Exists]
+    X --> C
+
+    E -->|4| Y[Edit City]
+    Y --> Z[Input City Index]
+    Z --> AA[Validate City Index]
+    AA -->|Valid| AB[Input New City Name]
+    AB --> AC[Update City Name]
+    AC --> AD[Save to cities.txt]
+    AD --> C
+    AA -->|Invalid| AE[Display Error<br>Invalid City Index]
+    AE --> C
+
+    E -->|5| AF[Search City by Index]
+    AF --> AG[Input City Index]
+    AG --> AH[Validate City Index]
+    AH -->|Valid| AI[Display City Name]
+    AI --> C
+    AH -->|Invalid| AJ[Display Error<br>Invalid City Index]
+    AJ --> C
+
+    E -->|6| AK[Display Cities]
+    AK --> AL[Read City List]
+    AL --> AM[Display Index: City Name]
+    AM --> C
+
+    E -->|7| AN[Display Roads]
+    AN --> AO[Read Adjacency Matrix]
+    AO --> AP[Display Adjacency Matrix]
+    AP --> C
+
+    E -->|8| AQ[Display Recorded Data]
+    AQ --> AR[Read Adjacency Matrix]
+    AR --> AS[Read Budget Matrix]
+    AS --> AT[Display Adjacency Matrix<br> and Budget Matrix]
+    AT --> C
+
+    E -->|9| AU[Help]
+    AU --> AV[Display Help Palette]
+
+    E -->|10| AX[Save All Data to cities.txt, roads.txt]
+    AX --> AY[Exit Program]
